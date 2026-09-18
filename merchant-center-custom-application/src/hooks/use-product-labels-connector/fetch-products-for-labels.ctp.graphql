@@ -1,0 +1,19 @@
+query FetchProductsForLabels($limit: Int!, $offset: Int!) {
+  products(limit: $limit, offset: $offset, sort: ["createdAt desc"]) {
+    total
+    count
+    offset
+    results {
+      id
+      key
+      masterData {
+        current {
+          nameAllLocales {
+            locale
+            value
+          }
+        }
+      }
+    }
+  }
+}

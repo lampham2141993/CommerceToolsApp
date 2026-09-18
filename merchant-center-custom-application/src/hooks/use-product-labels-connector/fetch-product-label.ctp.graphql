@@ -1,0 +1,10 @@
+query FetchProductLabel($id: String!) {
+  customObject(id: $id) {
+    id
+    key
+    version
+    createdAt
+    lastModifiedAt
+    value
+  }
+}

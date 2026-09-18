@@ -1,0 +1,10 @@
+mutation CreateOrUpdateProductLabel($draft: CustomObjectDraft!) {
+  createOrUpdateCustomObject(draft: $draft) {
+    id
+    key
+    version
+    createdAt
+    lastModifiedAt
+    value
+  }
+}
