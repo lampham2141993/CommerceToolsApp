@@ -6,9 +6,12 @@ deployAs:
         - key: CUSTOM_APPLICATION_ID
           description: The Custom Application ID from Merchant Center registration
           required: true
+          default: 'cmu6qhduc000l0104anv1gjrz'
         - key: ENTRY_POINT_URI_PATH
           description: The Application entry point URI path
           required: true
+          default: 'starter-typescript-4e8eec'
         - key: CLOUD_IDENTIFIER
           description: The cloud identifier for the Project region
+          required: true
           default: 'gcp-au'
