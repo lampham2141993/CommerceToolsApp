@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 import { useIntl } from 'react-intl';
 import { useRouteMatch, Link as RouterLink } from 'react-router-dom';
 import Constraints from '@commercetools-uikit/constraints';
@@ -16,7 +16,9 @@ type TWrapWithProps = {
   wrapper: (children: ReactNode) => ReactNode;
 };
 const WrapWith = (props: TWrapWithProps) => (
-  <>{props.condition ? props.wrapper(props.children) : props.children}</>
+  <React.Fragment>
+    {props.condition ? props.wrapper(props.children) : props.children}
+  </React.Fragment>
 );
 WrapWith.displayName = 'WrapWith';
 
