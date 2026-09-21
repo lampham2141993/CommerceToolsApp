@@ -1,4 +1,4 @@
-# Make sure to import the helper functions from the `ssr` entry point.
+// Make sure to import the helper functions from the `ssr` entry point.
 import { entryPointUriPathToPermissionKeys } from '@commercetools-frontend/application-shell/ssr';
 
 const defaultEntryPointUriPath = 'starter-typescript-4e8eec';
