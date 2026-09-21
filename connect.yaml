@@ -1,6 +1,9 @@
 deployAs:
   - name: merchant-center-custom-application
     applicationType: merchant-center-custom-application
+    scripts:
+      postDeploy: node scripts/post-deploy.js
+      preUndeploy: node scripts/pre-undeploy.js
     configuration:
       standardConfiguration:
         - key: CUSTOM_APPLICATION_ID
