@@ -16,6 +16,8 @@
     "format": "prettier --write '**/*.{js,ts,tsx}'",
     "typecheck": "tsc --noEmit",
     "ct:health-check": "tsx scripts/health-check.ts",
+    "connector:post-deploy": "node scripts/post-deploy.js",
+    "connector:pre-undeploy": "node scripts/pre-undeploy.js",
     "versions:appkit": "manypkg upgrade @commercetools-frontend",
     "versions:uikit": "manypkg upgrade @commercetools-uikit"
   },
