@@ -18,3 +18,7 @@ deployAs:
           description: The cloud identifier for the Project region
           required: true
           default: 'gcp-au'
+        - key: ENABLE_NEW_JSX_TRANSFORM
+          description: Enable the automatic React JSX runtime for the Custom Application build
+          required: true
+          default: 'true'

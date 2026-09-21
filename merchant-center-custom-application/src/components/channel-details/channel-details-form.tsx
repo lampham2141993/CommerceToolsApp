@@ -1,4 +1,4 @@
-import type { JSX, ReactElement } from 'react';
+import React, { type JSX, type ReactElement } from 'react';
 import { useFormik, type FormikHelpers } from 'formik';
 import { useIntl } from 'react-intl';
 import LocalizedTextField from '@commercetools-uikit/localized-text-field';

@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import Spacings from '@commercetools-uikit/spacings';
 import Channels from './components/channels';
